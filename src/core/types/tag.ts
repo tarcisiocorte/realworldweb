@@ -1,3 +1,6 @@
 import * as t from 'io-ts'
-export const tagCodec = t.string
+import { slugCodec } from '@/core/types/scalar'
+
+export const tagCodec = slugCodec
+
 export type Tag = t.TypeOf<typeof tagCodec>
