@@ -7,8 +7,8 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "node dist/src/index.js",
-    "dev": "nodemon --exec sucrase-node src/index.ts",
+    "start": "node dist/src/app.js",
+    "dev": "nodemon --exec sucrase-node src/app.ts",
     "test": "jest --passWithNoTests && yarn test:integration",
     "test:watch": "jest --watch",
     "test:integration": "jest --passWithNoTests --config jest.config.integration.js",
@@ -21,7 +21,6 @@
   },
   "dependencies": {
     "dotenv": "^10.0.0",
-    "express": "4.17.1",
     "fp-ts": "^2.11.4",
     "io-ts": "2.2.16",
     "io-ts-types": "0.5.16",
@@ -30,7 +29,6 @@
     "newtype-ts": "0.3.4"
   },
   "devDependencies": {
-    "@types/express": "4.17.12",
     "@types/jest": "^27.0.2",
     "@types/module-alias": "^2.0.1",
     "@types/node": "^16.10.8",
